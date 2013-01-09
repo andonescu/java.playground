@@ -1,4 +1,4 @@
-package ro.andonescu.playground.java.lamda.games;
+package ro.andonescu.playground.java.lambda.games;
 
 /**
  * Created with IntelliJ IDEA.
