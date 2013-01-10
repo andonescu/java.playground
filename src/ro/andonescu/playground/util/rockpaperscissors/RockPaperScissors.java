@@ -1,4 +1,4 @@
-package ro.andonescu.playground.java.lambda.games.rockpaperscissors;
+package ro.andonescu.playground.util.rockpaperscissors;
 
 /**
  * Created with IntelliJ IDEA.

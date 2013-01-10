@@ -1,6 +1,6 @@
-package ro.andonescu.playground.java.lambda.games.rockpaperscissors;
+package ro.andonescu.playground.util.rockpaperscissors;
 
-import ro.andonescu.playground.java.lambda.games.GameResult;
+import ro.andonescu.playground.util.GameResult;
 
 /**
  * Created with IntelliJ IDEA.

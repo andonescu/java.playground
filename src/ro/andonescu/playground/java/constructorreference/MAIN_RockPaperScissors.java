@@ -1,8 +1,9 @@
-package ro.andonescu.playground.java.lambda;
+package ro.andonescu.playground.java.constructorreference;
 
 import ro.andonescu.playground.util.GameResult;
 import ro.andonescu.playground.util.GameService;
 import ro.andonescu.playground.util.rockpaperscissors.RockPaperScissors;
+import ro.andonescu.playground.util.rockpaperscissors.RockPaperScissorsUtil;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,16 +17,8 @@ public class MAIN_RockPaperScissors {
 
     public void gameResultPredictor() {
 
-        GameService gameService = (playerOne, playerTwo) -> {
-            int gameValue = playerOne.getValue() - playerTwo.getValue();
-            if (gameValue == 0) {
-                return GameResult.DRAW;
-            } else if (gameValue == 1 || gameValue == -2) {
-                return GameResult.LOST;
-            } else {
-                return GameResult.WIN;
-            }
-        };
+
+        GameService gameService = RockPaperScissorsUtil::evaluate;
 
         GameResult result = gameService.getResult(RockPaperScissors.PAPER, RockPaperScissors.SCISSORS);
         System.out.println(String.format("game result : %s", result));
